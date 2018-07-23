@@ -50,3 +50,32 @@
   height: 7vh;
   background: #de041c;
 }
+
+.jlb-assessment-page .body-container .content-container .content-wrap .collage-container .images-1 {
+  background: white;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .collage-container .images-1 img {
+  width: 100%;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .collage-container .images-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .collage-container .images-2 img {
+  width: 100%;
+  height: auto !important;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .collage-container .images-2 .collage-5 {
+  width: 60%;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container {
+  background: url("../assets/SPLASH WATERMARK.png");
+  background-size: cover;
+}
