@@ -1,0 +1,52 @@
+.jlb-assessment-page {
+  margin: 0;
+  padding: 0;
+}
+
+.jlb-assessment-page .body-container {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jlb-assessment-page .body-container .hero {
+  position: relative;
+}
+
+.jlb-assessment-page .body-container .hero img {
+  width: 100%;
+  height: auto;
+}
+
+.jlb-assessment-page .body-container .hero div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.jlb-assessment-page .body-container .hero div h1, .jlb-assessment-page .body-container .hero div h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.jlb-assessment-page .body-container .hero div h1 {
+  margin: 0;
+  line-height: .5em;
+  font-size: 3.5em;
+  color: #de041c;
+}
+
+.jlb-assessment-page .body-container .hero div h2, .jlb-assessment-page .body-container .hero div p {
+  color: #fff;
+}
+
+.jlb-assessment-page .body-container .hero div p {
+  text-align: center;
+  width: 75%;
+  font-size: .5em;
+}
+
+.jlb-assessment-page .body-container .red-line {
+  height: 7vh;
+  background: #de041c;
+}

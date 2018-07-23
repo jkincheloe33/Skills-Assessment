@@ -2,5 +2,54 @@
 
 
 .jlb-assessment-page {
+    margin: 0;
+    padding: 0;
 
+    .body-container {
+        font-family: 'Montserrat', sans-serif;
+
+        .hero {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            div {
+                position: absolute;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+
+                h1, h2 {
+                    text-transform: uppercase;
+                    font-weight: 900;
+                }
+                h1 {
+                    margin: 0;
+                    line-height: .5em;
+                    font-size: 3.5em;
+                    color: #de041c;
+
+                }
+
+                h2, p {
+                    color: #fff;
+                }
+
+                p {
+                    text-align: center;
+                    width: 75%;
+                    font-size: .5em;
+                }
+            }
+        }
+
+        .red-line {
+            height: 7vh;
+            background: #de041c;
+        }
+    }
 }
