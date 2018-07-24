@@ -1,5 +1,21 @@
 $(document).ready(function () {
 
+    // ----------------------------------------------
+    //  Randomly selects a hero image from an array
+    // ----------------------------------------------
+
+    let hero = [
+        "./assets/HERO 1.jpg",
+        "./assets/HERO 2.jpg",
+        "./assets/HERO 2.jpg"
+    ];
+    let size = hero.length;
+    let i = Math.floor(size * Math.random());
+    document.getElementById('hero-image').src = hero[i];
+
+    // ----------------------------------------
+    //  Animation for collage and info sections
+    // ----------------------------------------
     let scroll = 0;
 
     $(window).scroll(() => {
@@ -13,7 +29,6 @@ $(document).ready(function () {
         }
 
         scroll = scrollY;
-        // console.log(scroll);
         if (scroll > 120) {
             $('#collageOne').addClass('fadeInUp load');
             $('#collageTwo').addClass('fadeInLeft load');
@@ -34,5 +49,4 @@ $(document).ready(function () {
         }
 
     });
-
 });
