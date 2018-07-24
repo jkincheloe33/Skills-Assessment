@@ -106,11 +106,15 @@
                     .info-header, .info-body {
                         height: 50%;
                         position: relative;
+                    }
+
+                    .info-header {
 
                         .info-title {
                             position: absolute;
                             bottom: 0;
                             left: 0;
+                            visibility: hidden;
 
                             h1, h2 {
                                 font-weight: 900;
@@ -128,14 +132,23 @@
                                 line-height: .5em;
                             }
                         }
+
+                        .info-title.load {
+                            visibility: visible;
+                        }
                     }
 
                     .info-body {
                         border-top: 2px solid black;
+                        visibility: hidden;
 
                         p {
                             font-size: .75em;
                         }
+                    }
+
+                    .info-body.load {
+                        visibility: visible;
                     }
                 }
             }
@@ -162,6 +175,13 @@
 .animatedTwo {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animatedThree {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }

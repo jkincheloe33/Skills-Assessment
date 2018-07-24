@@ -20,6 +20,8 @@ $(document).ready(function () {
             $('#collageThree').addClass('fadeInLeft load');
             $('#collageFour').addClass('fadeInDown load');
             $('#collageFive').addClass('fadeInUp load');
+            $('.info-title').addClass('slideInRight load');
+            $('.info-body').addClass('slideInRight load');
 
         } else {
             $('#collageOne').removeClass('fadeInUp load');
@@ -27,6 +29,8 @@ $(document).ready(function () {
             $('#collageThree').removeClass('fadeInLeft load');
             $('#collageFour').removeClass('fadeInDown load');
             $('#collageFive').removeClass('fadeInUp load');
+            $('.info-title').removeClass('slideInRight load');
+            $('.info-body').removeClass('slideInRight load');
         }
 
     });

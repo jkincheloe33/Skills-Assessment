@@ -96,34 +96,44 @@
   position: relative;
 }
 
-.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title {
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title {
   position: absolute;
   bottom: 0;
   left: 0;
+  visibility: hidden;
 }
 
-.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h1, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h2, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title h1, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title h2 {
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h1, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h2 {
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h1, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title h1 {
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h1 {
   color: #de041c;
   font-size: 2em;
   line-height: .5em;
 }
 
-.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h2, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title h2 {
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h2 {
   font-size: 1.25em;
   line-height: .5em;
 }
 
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title.load {
+  visibility: visible;
+}
+
 .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body {
   border-top: 2px solid black;
+  visibility: hidden;
 }
 
 .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body p {
   font-size: .75em;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body.load {
+  visibility: visible;
 }
 
 .jlb-assessment-page .body-container .video-container {
@@ -145,6 +155,13 @@
 .animatedTwo {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animatedThree {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
