@@ -4,6 +4,7 @@
 }
 
 .jlb-assessment-page .body-container {
+  position: relative;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -76,6 +77,50 @@
 }
 
 .jlb-assessment-page .body-container .content-container .content-wrap .info-container {
-  background: url("../assets/SPLASH WATERMARK.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/SPLASH WATERMARK.png");
   background-size: cover;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body {
+  height: 50%;
+  position: relative;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h1, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h2, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title h1, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h1, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title h1 {
+  color: #de041c;
+  font-size: 2em;
+  line-height: .5em;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-header .info-title h2, .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body .info-title h2 {
+  font-size: 1.25em;
+  line-height: .5em;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body {
+  border-top: 2px solid black;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body p {
+  font-size: .75em;
+}
+
+.jlb-assessment-page .body-container .video-container {
+  width: 40%;
+  position: absolute;
+  top: 53.5%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.4), 0 1px 20px 0 rgba(0, 0, 0, 0.4);
 }
