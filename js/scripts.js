@@ -7,7 +7,7 @@ $(document).ready(function () {
     let hero = [
         "./assets/HERO 1.jpg",
         "./assets/HERO 2.jpg",
-        "./assets/HERO 2.jpg"
+        "./assets/HERO 3.jpg"
     ];
     let size = hero.length;
     let i = Math.floor(size * Math.random());
@@ -47,6 +47,7 @@ $(document).ready(function () {
             $('.info-title').removeClass('slideInRight load');
             $('.info-body').removeClass('slideInRight load');
         }
+
 
     });
 });

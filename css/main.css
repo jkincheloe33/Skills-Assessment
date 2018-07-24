@@ -1,7 +1,10 @@
-.jlb-assessment-page {
+html, body {
+  height: 100%;
   margin: 0;
+}
+
+.jlb-assessment-page {
   padding: 0;
-  border: 1px solid transparent;
 }
 
 .jlb-assessment-page .body-container {
@@ -51,6 +54,10 @@
 .jlb-assessment-page .body-container .red-line {
   height: 7vh;
   background: #de041c;
+}
+
+.jlb-assessment-page .body-container .content-container {
+  display: block;
 }
 
 .jlb-assessment-page .body-container .content-container .content-wrap .collage-container .images-1 {
@@ -132,6 +139,11 @@
 
 .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body p {
   font-size: .75em;
+}
+
+.jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body span {
+  color: #de041c;
+  font-weight: bold;
 }
 
 .jlb-assessment-page .body-container .content-container .content-wrap .info-container .info-body.load {
